@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export default styled.input`
-  background-color: ${props => props.primary ? 'red' : 'blue' };
-  border: solid black;
-  padding: 14px;
+  background-color:  ${props => props.primary ? 'honeydew' : 'blue' };
+  border: solid darkgray thin;
+  padding: 4px;
   margin-left: 3px;
 
 `;

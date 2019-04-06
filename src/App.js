@@ -7,7 +7,7 @@ export const App = () => (
     <Input >
       {({ value, onChange, onSubmit, className }) => (
           <div className={className}>
-          <In
+          <In primary
               value={value}
               onChange={onChange}
           />
