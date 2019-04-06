@@ -1,17 +1,19 @@
 import React from 'react';
-import Input from './Input'
-
+import Input from '../src/StyledComponents/customInput'
+import Button from '../src/StyledComponents/button'
+import In from '../src/StyledComponents/input'
 
 export const App = () => (
-    <Input>
-      {({ value, onChange, onSubmit }) => (
-          <div>
-          <input
+    <Input >
+      {({ value, onChange, onSubmit, className }) => (
+          <div className={className}>
+          <In
               value={value}
               onChange={onChange}
-              style={{ border: "2px solid red" }}
           />
-            <button onClick={onSubmit}>Click Me</button>
+            <Button primary onClick={onSubmit}>Click Me</Button>
+            <Button  onClick={onSubmit}>Click Me</Button>
+
           </div>
       )}
     </Input>

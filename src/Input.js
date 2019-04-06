@@ -19,7 +19,7 @@ export class Input extends React.Component {
         const { value } = this.state;
         const { onChange, onSubmit } = this;
 
-        return this.props.children({ value, onChange, onSubmit });
+        return this.props.children({ value, onChange, onSubmit, ...this.props });
     }
 }
 
