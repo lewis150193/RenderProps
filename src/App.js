@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from '../src/StyledComponents/customInput'
-import Button from '../src/StyledComponents/button'
+import {Button, NewButton} from '../src/StyledComponents/button'
 import In from '../src/StyledComponents/input'
 
 export const App = () => (
@@ -12,7 +12,7 @@ export const App = () => (
               onChange={onChange}
           />
             <Button primary onClick={onSubmit}>Click Me</Button>
-            <Button  onClick={onSubmit}>Click Me</Button>
+            <NewButton   onClick={onSubmit}>Click Me</NewButton>
 
           </div>
       )}
